@@ -42,15 +42,8 @@ const Services = () => {
   return (
     <Box as="section" id="services" sx={styles.section}>
       <Container>
-        <SectionHeading
-          slogan="Ideal solutions for you"
-          title="Didn’t find what you were looking for?"
-        />
-        <Box sx={styles.grid}>
-          {services.map((service, i) => (
-            <Service key={i} service={service} />
-          ))}
-        </Box>
+   
+
       </Container>
     </Box>
   );

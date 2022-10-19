@@ -7,14 +7,13 @@ import {
   Input,
   Label,
   Button,
-  Select,
   Heading,
   Container,
 } from 'theme-ui';
 import { useState } from 'react';
 import { rgba } from 'polished';
 import Image from 'components/image';
-import serverRack from 'assets/images/server-rack.png';
+import serverRack from 'assets/images/macbook.svg';
 
 const tlds = [
   {
@@ -54,30 +53,27 @@ const Banner = () => {
       <Container>
         <Box sx={styles.grid}>
           <Box as="form" sx={styles.domainCard} onSubmit={handleSubmit}>
-            <Heading>Built your business with a website</Heading>
+            <Heading>
+              Digitally transform customer experience
+            </Heading>
             <Flex sx={styles.inputGroup}>
               <Label htmlFor="domainName" variant="styles.srOnly">
-                Your Domain Name
+                Email Address
               </Label>
               <Input
                 type="text"
                 id="domainName"
                 value={state.domainName}
                 onChange={handleChange}
-                placeholder="Your domain name"
+                placeholder="Your email address"
               />
               <Label htmlFor="tld" variant="styles.srOnly">
                 Select TLD
               </Label>
-              <Select id="tld" defaultValue={state.tld} onChange={handleChange}>
-                {tlds.map((tld, i) => (
-                  <option key={i}>{tld.label}</option>
-                ))}
-              </Select>
+    
             </Flex>
             <Button type="submit" variant="primary" sx={styles.submit}>
-              Start for free
-            </Button>
+Ger started            </Button>
             <Text as="p" sx={styles.note}>
               No credit card required.
             </Text>
