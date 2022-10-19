@@ -7,29 +7,32 @@ import ipad from 'assets/images/bn.jpg';
 
 const data = [
   {
-    title: 'Organize your project content',
+    title: "Web Development",
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        Leveraging tested approach to web development, we bring front-end,
+        back-end, and architectural ability together to deliver customer-centric
+        and high performing solutions.
       </div>
     ),
   },
   {
-    title: 'Collaborate your documents easily',
+    title: "App Development",
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        Our team specializes in development of highly scalable MVC Mobile
+        Applications. With experience in the range of development from pure
+        native to cross-platform apps, we can help you select and build the best
+        choice for your project.
       </div>
     ),
   },
   {
-    title: `Build your team's knowledge base`,
+    title: `Creative Agency`,
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        Webluxra’s product design services cover entire product design
+        lifecycle, From prototyping to fully functional design.
       </div>
     ),
   },
@@ -46,9 +49,9 @@ const PremiumFeature = () => {
         <Box sx={styles.accordionGroup}>
           <SectionHeading
             sx={styles.heading}
-            slogan="Website content builder"
-            title="Meet our premium features that will make you wow"
-            description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+            slogan=""
+            title="Innovative Software Solutions"
+            description=""
           />
           <Accordion items={data} />
         </Box>

@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Container, Box } from 'theme-ui';
-import { useMediaQuery } from 'react-responsive';
-import SectionHeading from 'components/section-heading';
-import Image from 'components/image';
-import supportTeam from 'assets/images/support-team.png';
+import { jsx } from "theme-ui";
+import { Container, Box } from "theme-ui";
+import { useMediaQuery } from "react-responsive";
+import SectionHeading from "components/section-heading";
+import Image from "components/image";
+import supportTeam from "assets/images/balancing.svg";
 
 export default function Support() {
   return (
@@ -12,8 +12,8 @@ export default function Support() {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Meet our support team who always work hardly behind the scenes"
-          description="Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click into your preferred."
+          title="What do you want to [code, build, debug, deploy, collaborate on, analyze, learn] today?"
+          description=""
         />
 
         <Box as="figure" sx={styles.thumbWrapper}>
@@ -36,8 +36,8 @@ const styles = {
       fontWeight: 500,
       fontSize: [3, null, null, 8, 11],
       lineHeight: 1.4,
-      letterSpacing: 'heading',
-      color: 'heading',
+      letterSpacing: "heading",
+      color: "heading",
     },
     p: {
       mt: [3],
@@ -45,11 +45,11 @@ const styles = {
     },
   },
   thumbWrapper: {
-    display: 'flex',
-    justifyContent: 'center',
-    mb: '-1px',
+    display: "flex",
+    justifyContent: "center",
+    mb: "-1px",
     img: {
-      height: [180, 'auto'],
+      height: [180, "auto"],
     },
   },
 };

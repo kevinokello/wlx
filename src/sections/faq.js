@@ -1,50 +1,45 @@
 /** @jsx jsx */
-import { jsx, Box, Container } from 'theme-ui';
-import Masonry from 'react-masonry-component';
-import SectionHeading from 'components/section-heading';
-import FaqItem from 'components/cards/faq-item';
+import { jsx, Box, Container } from "theme-ui";
+import Masonry from "react-masonry-component";
+import SectionHeading from "components/section-heading";
+import faqItem from "components/cards/faq-item";
 
 const data = [
   {
     id: 1,
-    ques: 'Which domain should I purchase?',
-    ans: `We make it easy to move to CometNine. Simply contact us and we'll move your hosting account from any other provider, regardless of the control panel. If at anytime your website is down for more than 0.1% result`,
+    ques: "1. Requirement Gathering?",
+    ans: `This is our very first step in designing your effective website. We gather requirements and analyze these requirements based on your company goals, target audience and objectives.`,
   },
   {
     id: 2,
-    ques: 'What are some tips when choosing a name?',
-    ans: `Get your website tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.`,
+    ques: "2. Creating a Workflow",
+    ans: `The key to a successful website design is planning. Before we start any project we listen to the goals you are trying to achieve and gain an understanding of your business so that we can visualise it within the design process.`,
   },
   {
     id: 3,
-    ques: 'What if I need help choosing the right domain?',
-    ans: `Create a hub for cross-functional work that also works with all your other tools. Centralize and standardize communication with Miro. All premium functional are included here with updates.`,
+    ques: "3. Prototype $ Mockup",
+    ans: `Once the visual design for high-fidelity wireframe receives a green signal from the client, it is time to develop visual mockups! Mockups give the visual representation of the planned design of the site.`,
   },
   {
     id: 4,
-    ques: 'Can I upgrade or downgrade my web hosting plan',
-    ans: `The pricing made me a little hesitant at first but I have been pleasantly surprised by the level of care given by CometNine.`,
+    ques: "4. Development",
+    ans: `This part of the design process will often be shapedd by existing branding elements, colour choices, and logos, as stipulated by the you.`,
   },
   {
     id: 5,
-    ques: 'How do I upgrade the storage capacity of my hosting plan?',
-    ans: `Stop your viewers from getting distracted. Publish videos to your own Channel and rest easy knowing viewers won’t be annoyed by ads or pulled down a rabbit hole of unrelated videos.`,
+    ques: "5. Deployment",
+    ans: `Now it’s time for everyone’s favorite part of the website design process: When everything has been thoroughly tested, and you’re happy with the site, it’s time to launch.`,
   },
   {
     id: 6,
-    ques: 'What is in InMotion Hosting’s uptime rate?',
-    ans: `Designed with beginners in mind and packed with advanced features developers will love. Start with a quick and simple install`,
-  },
-  {
-    id: 7,
-    ques: 'Learn from community on Brandwagon',
-    ans: `Brian Halligan knows that you need more than a great product to have a great brand. Hear his thoughts & score a peek at our wagon.`,
+    ques: "6. Support & Maintenance",
+    ans: `It doesn’t stop there, with ongoing support ensuring your website continues to deliver results. We monitor, review and analyse how successful your website is performing, making sure it is delivering on its core goals.`,
   },
 ];
 
 const masonryOptions = { originTop: true };
 
-const Faq = () => {
+const faq = () => {
   return (
     <Box as="section" id="faq" sx={styles.section}>
       <Container>
@@ -55,7 +50,7 @@ const Faq = () => {
         />
         <Masonry options={masonryOptions} sx={styles.grid}>
           {data.map((item) => {
-            return <FaqItem key={item.id} faq={item} className="faq-item" />;
+            return <faqItem key={item.id} faq={item} className="faq-item" />;
           })}
         </Masonry>
       </Container>
@@ -63,7 +58,7 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default faq;
 
 const styles = {
   section: {
@@ -71,6 +66,6 @@ const styles = {
     pb: [null, null, null, null, null, null, 10, 6],
   },
   grid: {
-    mx: [null, null, null, -6, -8, 'unset'],
+    mx: [null, null, null, -6, -8, "unset"],
   },
 };

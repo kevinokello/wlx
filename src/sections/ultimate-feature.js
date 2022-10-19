@@ -14,38 +14,20 @@ const data = [
   {
     id: 1,
     icon: icon1,
-    title: 'ultimate Email  subscription',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    title: "Ultimate Form Integration",
+    description: `To provide the best website development service we integrate Inquiry forms that generate leads & help get their queries answered and contact them in future.`,
   },
   {
     id: 2,
     icon: icon2,
-    title: 'Bolt Performance',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    title: "website optimization",
+    description: `By optimizing your website, you can not only tap into an untapped market in the most effective and efficient manner (without paying for advertising) but open doors to more conversions and revenue gains. `,
   },
   {
     id: 3,
     icon: icon3,
-    title: 'Secure Transaction',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
-  },
-  {
-    id: 4,
-    icon: icon4,
-    title: 'Multiple Options',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
-  },
-  {
-    id: 5,
-    icon: icon5,
-    title: '5 Star Rating service',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
-  },
-  {
-    id: 6,
-    icon: icon6,
-    title: 'Integrated with Shopify',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    title: "Secure Payment Integration",
+    description: `With the rise in use of mobile payment in Kenya and Globally, businesses are scrambling to put their houses in order just to keep up with the fast technological pace and the adaption of online payments.`,
   },
 ];
 
@@ -55,8 +37,8 @@ const UltimateFeatures = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          slogan="Product features"
-          title="Ultimate features that works"
+          slogan="Why We’re the Best for you?"
+          title="We can take a start-up business with nothing to a fully functioning brand online and offline."
         />
         <Box sx={styles.features}>
           {data?.map((item) => (

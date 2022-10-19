@@ -13,7 +13,8 @@ import {
 import { useState } from 'react';
 import { rgba } from 'polished';
 import Image from 'components/image';
-import serverRack from 'assets/images/macbook.svg';
+import serverRack from 'assets/images/map.svg';
+import Support from "sections/support";
 
 const tlds = [
   {
@@ -50,39 +51,7 @@ const Banner = () => {
 
   return (
     <Box as="section" id="home" sx={styles.section}>
-      <Container>
-        <Box sx={styles.grid}>
-          <Box as="form" sx={styles.domainCard} onSubmit={handleSubmit}>
-            <Heading>
-              Digitally transform customer experience
-            </Heading>
-            <Flex sx={styles.inputGroup}>
-              <Label htmlFor="domainName" variant="styles.srOnly">
-                Email Address
-              </Label>
-              <Input
-                type="text"
-                id="domainName"
-                value={state.domainName}
-                onChange={handleChange}
-                placeholder="Your email address"
-              />
-              <Label htmlFor="tld" variant="styles.srOnly">
-                Select TLD
-              </Label>
-    
-            </Flex>
-            <Button type="submit" variant="primary" sx={styles.submit}>
-Ger started            </Button>
-            <Text as="p" sx={styles.note}>
-              No credit card required.
-            </Text>
-          </Box>
-          <Box as="figure" sx={styles.illustration}>
-            <Image src={serverRack} loading="lazy" alt="sever-rack" />
-          </Box>
-        </Box>
-      </Container>
+        <Support />
     </Box>
   );
 };
@@ -91,7 +60,7 @@ export default Banner;
 
 const styles = {
   section: {
-    backgroundColor: 'primary',
+    backgroundColor: 'secondary',
     pt: [17, null, null, 20, null],
     pb: [6, null, null, 12, 16],
   },

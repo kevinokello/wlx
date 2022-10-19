@@ -5,10 +5,12 @@ import Image from 'components/image';
 import support from 'assets/images/support.png';
 
 const list = [
-  'Medical and vision',
-  'Life insurance',
-  'HSAs and FSAs',
-  'Commuter benefits',
+  "Ecommerce",
+  "Logistics",
+  "Software",
+  "Health",
+  "Finance",
+  "Agency",
 ];
 
 const CustomerSupport = () => {
@@ -21,20 +23,19 @@ const CustomerSupport = () => {
           </Box>
           <Box sx={styles.content}>
             <Heading sx={styles.title}>
-              Customer support is our main priority with their hundred percent
-              satisfaction.
+              Your website is your online business card - let's make it one to
+              remember
             </Heading>
             <Text as="p" sx={styles.summary}>
-              Get your tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+              Are you a startup brand, well established company, in Kenya or
+              worldwide? It doesn't matter. We work with a range of clients.
             </Text>
 
             <Grid sx={styles.list} as="ul">
               {list.map((item, i) => (
                 <Text as="li" key={i}>
                   <IoIosCheckmarkCircle
-                    sx={{ color: 'secondary', mr: 2 }}
+                    sx={{ color: "secondary", mr: 2 }}
                     size="20px"
                   />
                   {item}

@@ -3,7 +3,7 @@ import { jsx, Box, Flex, Container, Button } from 'theme-ui';
 import { Fragment, useState } from 'react';
 import Sticky from 'react-stickynode';
 import Logo from 'components/logo';
-import TopBar from 'components/topbar';
+// import TopBar from 'components/topbar';
 import LockIcon from 'components/icons/lock';
 import HamburgerMenu from 'components/hamburger';
 import Navbar from './navbar';
@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <Fragment>
-      <TopBar />
+      {/* <TopBar /> */}
       <Sticky
         enabled={true}
         top={0}
@@ -56,16 +56,7 @@ export default function Header() {
               handleCloseMenu={handleCloseMenu}
             />
             <Flex sx={styles.buttonGroup}>
-              <Button
-                variant="text"
-                sx={{
-                  ...styles.login,
-                  color: state.isSticky ? 'text' : 'white',
-                }}
-              >
-                <LockIcon fill={state.isSticky ? '#343D48' : 'white'} />
-                Login
-              </Button>
+     
               <Button
                 variant="text"
                 sx={{
@@ -74,8 +65,7 @@ export default function Header() {
                   color: state.isSticky ? 'white' : 'primary',
                 }}
               >
-                Join Community
-              </Button>
+Get Started              </Button>
             </Flex>
 
             <HamburgerMenu
